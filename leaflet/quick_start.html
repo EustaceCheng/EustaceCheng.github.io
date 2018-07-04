@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>quick_start</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+<style>
+#mapid { height: 400px; width: 600px;}
+</style>
+</head>
+<body>
+<div id="mapid"></div>
+<script>
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+	accessToken: 'pk.eyJ1IjoiZXVzdGFjZWNoZW5nIiwiYSI6ImNqajZ1MDF3MzJlZ3AzdnQ0a3FscWcxaTIifQ.RFHmtU1sFiu_7Ilam5LxVg'
+}).addTo(mymap);
+</script>
+</body>
+</html>
