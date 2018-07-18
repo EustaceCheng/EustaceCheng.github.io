@@ -6,7 +6,7 @@
         var href = window.location.href;
         var manifestarr = URLToArray(href);
 		var defaulturl = $('.iiif-viewer').attr('data-url');
-        var url = (manifestarr['manifest']=='')?defaulturl:manifestarr['manifest'];
+        var url = (manifestarr['manifest']==undefined)?defaulturl:manifestarr['manifest'];
 		
         _this.attr('id','main');
         var elem = '#main';        
