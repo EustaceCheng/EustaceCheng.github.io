@@ -5,7 +5,9 @@
         var manifest = {};
         var href = window.location.href;
         var manifestarr = URLToArray(href);
-        var url = manifestarr['manifest'];
+		var defaulturl = $('.iiif-viewer').attr('data-url');
+        var url = (manifestarr['manifest']=='')?defaulturl:manifestarr['manifest'];
+		
         _this.attr('id','main');
         var elem = '#main';        
         var map;        
