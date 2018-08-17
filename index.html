@@ -13,10 +13,15 @@
 <button class="button button4">react</button>
 <button class="button button5">掃描檔存放區</button>
 
-  <form id="myForm">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<form id="myForm">
   <input type="radio" name="radioName" value="1" /> 1 <br />
   <input type="radio" name="radioName" value="2" /> 2 <br />
   <input type="radio" name="radioName" value="3" /> 3 <br />
 </form>
+
+$('#myForm input').on('change', function() {
+   alert($('input[name=radioName]:checked', '#myForm').val()); 
+});
   </body>
 </html>
