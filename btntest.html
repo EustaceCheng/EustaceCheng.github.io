@@ -4,3 +4,7 @@
   <input type="radio" name="radioName" value="2" /> 2 <br />
   <input type="radio" name="radioName" value="3" /> 3 <br />
 </form>
+
+$('#myForm input').on('change', function() {
+   alert($('input[name=radioName]:checked', '#myForm').val()); 
+});
