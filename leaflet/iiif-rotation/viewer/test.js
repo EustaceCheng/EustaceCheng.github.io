@@ -103,7 +103,7 @@
 			add_chose_button();
             L.tileLayer.iiif(url,{                
                 setFullZoom:false,
-                setMaxBounds:true,
+                setMaxBounds:false,
                 rotation:rotation
             }).addTo(map);
             
