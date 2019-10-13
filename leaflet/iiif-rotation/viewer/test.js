@@ -95,7 +95,7 @@
                 zoom: 18,
                 attributionControl:false, //if false, leaflet logo cancel
                 zoomControl: false,
-                zoomSnap:0.001// if 0.001, img fit side
+                //zoomSnap:0.001// if 0.001, img fit side
             });          
             
             backgroundLabel();
