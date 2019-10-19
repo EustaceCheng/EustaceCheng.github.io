@@ -31,6 +31,13 @@
 <div id="app-3">
   <p v-if="seen">现在你看到我了</p>
 </div>
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
 
 
   </body>
