@@ -10,3 +10,6 @@ var app2 = new Vue({
     message: '页面加载于 ' + new Date().toLocaleString()
   }
 })
+$('#myForm input').on('change', function() {
+   alert($('input[name=radioName]:checked', '#myForm').val()); 
+});
