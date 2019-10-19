@@ -14,7 +14,7 @@
 <button class="button button4">react</button>
 <button class="button button5">掃描檔存放區</button>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <form id="myForm">
   <input type="radio" name="radioName" value="1" /> 1 <br />
   <input type="radio" name="radioName" value="2" /> 2 <br />
@@ -28,23 +28,10 @@
     鼠标悬停几秒钟查看此处动态绑定的提示信息！
   </span>
 </div>
-<script>
-var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
-var app2 = new Vue({
-  el: '#app-2',
-  data: {
-    message: '页面加载于 ' + new Date().toLocaleString()
-  }
-})
 
-$('#myForm input').on('change', function() {
-   alert($('input[name=radioName]:checked', '#myForm').val()); 
-});
-  </script>
+
+
   </body>
+
+<script src="./js/vue.js"></script>
 </html>
