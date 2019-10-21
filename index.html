@@ -15,18 +15,15 @@
 <button class="button button5">掃描檔存放區</button>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<form id="myForm">
-  <input type="radio" name="radioName" value="1" /> 1 <br />
-  <input type="radio" name="radioName" value="2" /> 2 <br />
-  <input type="radio" name="radioName" value="3" /> 3 <br />
-</form>
-<div id="app-5">
-  <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">反转消息</button>
-</div>
-<div id="app-6">
-  <p>{{ message }}</p>
-  <input v-model="message">
+
+<div id="app-7">
+  <ol start='0'>   
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:todo="item"
+      v-bind:key="item.id"
+    ></todo-item>
+  </ol>
 </div>
 
 
