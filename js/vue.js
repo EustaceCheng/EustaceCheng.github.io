@@ -1,21 +1,18 @@
-var app5 = new Vue({
-  el: '#app-5',
-  data: {
-    message: 'Hello Vue.js!'
-  },
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split('').reverse().join('')
-    }
-  }
-})
-var app6 = new Vue({
-  el: '#app-6',
-  data: {
-    message: 'Hello Vue!'
-  }
+Vue.component('todo-item', {
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
 })
 
+var app7 = new Vue({
+  el: '#app-7',
+  data: {
+    groceryList: [
+      { id: 0, text: '測試' },
+      { id: 1, text: 'vue' },
+      { id: 2, text: '學習' }
+    ]
+  }
+})
 
 $('#myForm input').on('change', function() {
    alert($('input[name=radioName]:checked', '#myForm').val()); 
