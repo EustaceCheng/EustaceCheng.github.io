@@ -1,3 +1,4 @@
+
 Vue.component('todo-item', {
   props: ['todo'],
   template: '<li>{{ todo.text }}</li>'
@@ -14,6 +15,3 @@ var app7 = new Vue({
   }
 })
 
-$('#myForm input').on('change', function() {
-   alert($('input[name=radioName]:checked', '#myForm').val()); 
-});
