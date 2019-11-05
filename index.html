@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Eustace pages</title>
-<link rel="icon" href="img/icons8-github-48.png">
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<link rel="stylesheet" type="text/css" href="index.css">
+    <title>Eustace pages</title>
+    <link rel="icon" href="img/icons8-github-48.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
-<a href="leaflet/index.html"><button class="button">Leaflet</button></a>
+    <a href="leaflet/index.html"><button class="button">Leaflet</button></a>
+    <button class="button button2">ML</button>
+    <button class="button button3">laravel</button>
+    <button class="button button4">react</button>
+    <button class="button button5">掃描檔存放區</button>
 
-<button class="button button2">ML</button>
-<button class="button button3">laravel</button>
-<button class="button button4">react</button>
-<button class="button button5">掃描檔存放區</button>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<div id="app-7">
-  <ol start='0'>   
-    <todo-item
-      v-for="item in groceryList"
-      v-bind:todo="item"
-      v-bind:key="item.id"
-    ></todo-item>
-  </ol>
+    <div id="app">
+  <h1>Hello App!</h1>
+  <p>
+    <!-- 使用 router-link 组件来导航. -->
+    <!-- 通过传入 `to` 属性指定链接. -->
+    <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
+  </p>
+  <!-- 路由出口 -->
+  <!-- 路由匹配到的组件将渲染在这里 -->
+  <router-view></router-view>
 </div>
-
-
-  </body>
-
+   
+    
+</body>
 <script src="./js/vue.js"></script>
+
 </html>
